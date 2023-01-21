@@ -66,3 +66,11 @@ font-weight: 700;
   font-size: 14px;
   border-radius: 30%;
 }
+
+h1 * {
+  margin: 10px;
+  color:  rgb(40,127,204);
+  text-decoration: none; 
+  font-family: sans-serif;
+  font-size: 0.6em;
+}
