@@ -1,0 +1,13 @@
+#container {
+    display: flex;
+}
+#main-container {
+    padding: 10px;
+    margin: 20px;
+    width: 100%;
+    box-shadow: 2px 2px 4px 1px #ddd;
+}
+
+#podcast-player{
+    margin: 10px 0 10px 0;
+}
