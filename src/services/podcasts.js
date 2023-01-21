@@ -8,5 +8,6 @@ export const getPodcasts = async () =>
 export const getEpisodes = async id =>
     (await (await fetch(`https://itunes.apple.com/lookup?id=${id}&entity=podcastEpisode&limit=100`)).json())
         .results.filter((_, i) => i > 0).map(x => ({
-            name: x.trackName, date: x.releaseDate, ms: x.trackTimeMillis, id: x.episodeGuid
+            name: x.trackName, date: x.releaseDate, ms: x.trackTimeMillis, id: x.episodeGuid,
+             desc: x.description, mp3: x.episodeUrl
         }))
