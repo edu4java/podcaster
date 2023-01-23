@@ -35,7 +35,7 @@ export const Podcast = () => {
               {episodes.map((item, index) => (
                 <tr key={index} >
                   <td className="td-title">
-                    <Link to={`/podcast/${idPodcast}/episode/${item.id}`}> {item.name} </Link>
+                    <Link to={`/podcast/${idPodcast}/episode/${encodeURIComponent(item.id)}`}> {item.name} </Link>
                   </td>
                   <td>{fromatDate(new Date(item.date))} </td>
                   <td>{milliseconds2Minutes(item.ms)} </td>
